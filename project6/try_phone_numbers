@@ -1,0 +1,66 @@
+#test script for project 6
+#Author: Jing Wang, for Program Design
+#To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_email
+# Compile your program, producing a.out as the executable
+# To run the script, type
+# ./try_email
+# The user input will not be shown on the screen
+./a.out <<-EndOfInput
+input_names.txt
+EndOfInput
+#
+cat phone_input_names.txt
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter file name: input_names.txt'
+echo 'Output file name: phone_input_names.txt'
+echo '(916)825-3688'
+echo '(615)424-7288'
+echo '(743)843-2677'
+echo '(813)233-7226'
+echo '(614)738-2273'
+echo '(654)222-4245'
+echo '(813)476-6637'
+echo '(408)253-2637'
+echo '(727)329-2273'
+echo '(840)247-7678'
+echo '(765)686-2377'
+echo '(398)767-3596'
+echo '(813)538-8377'
+echo '(439)687-3867'
+echo '(813)776-4726'
+echo '(727)783-6574'
+echo '(813)596-3729'
+echo '(615)765-3433'
+echo '(727)988-3652'
+echo '(804)813-3322'
+echo '(813)364-9874'
+echo '(615)746-3944'
+echo '(813)983-4853'
+echo '(408)727-1244'
+echo '(813)827-4949'
+echo '(727)876-3332'
+echo '(615)848-4942'
+echo '(439)813-4941'
+echo '(727)848-8272'
+echo '(837)873-2221'
+echo '(813)987-4420'
+echo '(219)339-4932'
+echo '(408)884-9312'
+echo '(831)848-3939'
+echo '(813)948-3832'
+echo '(614)727-3922'
+echo '(727)847-2249'
+echo '(727)882-9941'
+echo '(764)949-2929'
+echo '(217)848-0092'
+echo '(741)980-7272'
+echo '(813)939-1129'
+echo '(531)615-4948'
+echo '(663)948-1938'
+echo '(472)938-3341'
+echo '(813)842-2992'
+echo '===================================================='
+#

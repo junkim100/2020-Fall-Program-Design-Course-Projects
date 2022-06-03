@@ -1,0 +1,68 @@
+# Author: Jing Wang, for Program Design
+# try_stars is a Unix shell script that will be used to test project 5.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_encode
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_encode
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+./a.out <<-EndOfInput
+topsecret
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter input: topsecret'
+echo 'Output: Two * characters not found'
+#
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+topsecret*
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter input: topsecret*'
+echo 'Output: Two * characters not found'
+#
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+*topsecret*
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter input: *topsecret*'
+echo 'Output: topsecret'
+#
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+flee*now*
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter input: flee*now*'
+echo 'Output: now'
+#
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+adfaskj95323*assassinate*qerkjka*24
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter input: adfaskj95323*assassinate*qerkjka*24'
+echo 'Output: assassinate'
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+*defend**thecastle**
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter a word: *defend**thecastle**'
+echo 'Output: defend'
+echo '===================================================='

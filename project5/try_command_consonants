@@ -1,0 +1,37 @@
+# Author: Jing Wang, for Program Design
+# try_command_consonants is a Unix shell script that will be used to test project 5.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_command_consonants
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_command_consonants
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+#
+./a.out a882sdfk_sd llk 29c
+#
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'sdfksdllkc'
+echo '===================================================='
+#
+./a.out CSI:Miami 
+#
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'CSMm'
+echo '===================================================='
+##
+./a.out
+#
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Usage: ./a.out input'
+echo '===================================================='
+#
+#
+#
+#
+#

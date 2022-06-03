@@ -1,0 +1,38 @@
+#iAuthor: Jing Wang, for Program Design
+# try_consonants is a Unix shell script that will be used to test project 2, problem #2.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_consonants
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_consonants
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+3 Little Pigs
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Input: 3 Little Pigs'
+echo 'Output: LttlPgs'
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+zone8 abc!12DE3
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Input: zone8 abc!12DE3'
+echo 'Output: znbcD' 
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+COP3514_Program_Design 
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Input: COP3514_Program_Design' 
+echo 'Output: CPPrgrmDsgn' 
+echo '===================================================='

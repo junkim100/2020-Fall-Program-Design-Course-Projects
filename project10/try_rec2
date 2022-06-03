@@ -1,0 +1,142 @@
+# Author: Jing Wang, for Program Design
+# try_rec is a Unix shell script that will be used to test project 8.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_rec
+# Compile your program, producing a.out as the executable
+# To run the script, type
+# ./try_rec
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+./a.out <<-EndOfInput
+a
+sp_gurgen@yahoo.com
+dance
+Kohar
+Gurgen
+p
+a
+1987tec@gmail.com
+dance
+Tanja
+Stina
+p
+a
+yewande_1965@yahoo.com
+tennis
+Yewande
+Sakura
+p
+a
+jr765@gmail.com
+art
+Jean
+Reagan
+a
+sddpash@aol.com
+tennis
+Ashley
+Spires
+a
+tdwinn007@icould.com
+dance
+Whee
+Winn
+a
+mantchev_lisa@gmail.com
+tennis
+Lisa
+Mantchev
+a
+mantchev_lisa@gmail.com
+dance
+Lisa
+Mantchev
+p
+q
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter operation code: a'
+echo 'Enter email: sp_gurgen@yahoo.com'
+echo 'Enter class: dance'
+echo 'Enter first name: Kohar'
+echo 'Enter last name: Gurgen'
+echo '===================================================='
+echo 'Expected:'
+echo 'Enter opertion code: p'
+echo 'p_gurgen@yahoo.com                               Kohar          Gurgen                   dance'
+echo '===================================================='
+echo 'Expected:'
+echo 'Enter operation code: a'
+echo 'Enter email: 1987tec@gmail.com'
+echo 'Enter class: dance'
+echo 'Enter first name: Tanja'
+echo 'Enter last name: Stina'
+echo '===================================================='
+echo 'Expected:'
+echo 'Enter opertion code: p'
+echo 'p_gurgen@yahoo.com                               Kohar          Gurgen                   dance'
+echo '1987tec@gmail.com                                Tanja          Stina                    dance'
+echo '===================================================='
+echo 'Expected:'
+echo 'Enter operation code: a'
+echo 'Enter email: yewande_1965@yahoo.com'
+echo 'Enter class: tennis'
+echo 'Enter first name: Yewande'
+echo 'Enter last name: Sakura'
+echo '===================================================='
+echo 'Expected:'
+echo 'Enter operation code: p'
+echo 'p_gurgen@yahoo.com                                Kohar          Gurgen                   dance'
+echo '1987tec@gmail.com                                 Tanja          Stina                    dance'
+echo 'yewande_1965@yahoo.com                            Yewande        Sakura                  tennis'
+cho '===================================================='
+echo 'Expected:'
+echo 'Enter operation code: a'
+echo 'Enter email: jr765@gmail.com'
+echo 'Enter class: art'
+echo 'Enter first name: Jean'
+echo 'Enter last name: Reagan'
+echo '===================================================='
+echo 'Expected:'
+echo 'Enter operation code: a'
+echo 'Enter email: sddpash@aol.com'
+echo 'Enter class: tennis'
+echo 'Enter first name: Ashley'
+echo 'Enter last name: Spires'
+echo '===================================================='
+echo 'Expected:'
+echo 'Enter operation code: a'
+echo 'Enter email: tdwinn007@icould.com'
+echo 'Enter classroom: Toddler'
+echo 'Enter first name: Whee'
+echo 'Enter last name: Winn'
+echo '===================================================='
+echo 'Expected:'
+echo 'Enter operation code: a'
+echo 'Enter email: mantchev_list@gmail.com'
+echo 'Enter class: tennis' 
+echo 'Enter first name: Lisa'
+echo 'Enter last name: Mantchev' 
+echo '===================================================='
+echo 'Expected:'
+echo 'Enter operation code: a'
+echo 'Enter email: mantchev_list@gmail.com'
+echo 'Enter class: dance' 
+echo 'Enter first name: Lisa'
+echo 'Enter last name: Mantchev' 
+echo '===================================================='
+echo 'Expected:'
+echo 'Enter operation code: p'
+echo 'jr765@gmail.com                                   Jean           Reagan                     art'
+echo 'sp_gurgen@yahoo.com                               Kohar          Gurgen                   dance'
+echo 'mantchev_lisa@gmail.com                           Lisa           Mantchev                 dance'
+echo '1987tec@gmail.com                                 Tanja          Stina                    dance'
+echo 'tdwinn007@icould.com                              Whee           Winn                     dance'
+echo 'mantchev_lisa@gmail.com                           Lisa           Mantchev                tennis'
+echo 'yewande_1965@yahoo.com                            Yewande        Sakura                  tennis'
+echo 'sddpash@aol.com                                   Ashley         Spires                  tennis'
+echo '===================================================='
+echo 'Enter operation code: q'

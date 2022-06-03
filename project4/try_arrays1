@@ -1,0 +1,48 @@
+# Written by Jing Wang for Program Design
+# try_arrays1 is a Unix shell script that will be used to test project 4, problem 1.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_arrays1
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_arrays1
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+./a.out <<-EndOfInput
+4
+-6 0 17 3
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the length of the array: 4'
+echo 'Enter the elements of the array: -6 0 17 3'
+echo 'Output: '
+echo 'Array 1: -6'
+echo 'Array 2: 17 3'
+echo '===================================================='
+./a.out <<-EndOfInput
+5
+3 9 1 -4 0
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the length of the array: 5'
+echo 'Enter the elements of the array: 3 9 1 -4 0'
+echo 'Output: '
+echo 'Array 1: 3 9 1 -4'
+echo 'Array 2:'
+echo '===================================================='
+./a.out <<-EndOfInput
+7
+0 3 9 1 -4 10 23
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the length of the array: 7'
+echo 'Enter the elements of the array: 0 3 9 1 -4 10 23'
+echo 'Output: '
+echo 'Array 1:'
+echo 'Array 2: 3 9 1 -4 10 23'
+echo '===================================================='
+

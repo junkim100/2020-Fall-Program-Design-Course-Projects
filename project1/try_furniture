@@ -1,0 +1,100 @@
+# Written by Jing Wang for Program Design
+# try_furniture is a Unix shell script.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_furniture
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_furniture
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+0
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please select from the following menu: 1.Sofa 2. Loveseat, 3. 4 Post Bed, 4. Dresser, 5. Kitchen Table'
+echo 'Enter furniture selection: 0'
+echo 'Invalid input. The input should be in the range of 1 to 5.'
+echo '===================================================='
+./a.out <<-EndOfInput
+6
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please select from the following menu: 1.Sofa 2. Loveseat, 3. 4 Post Bed, 4. Dresser, 5. Kitchen Table'
+echo 'Enter furniture selection: 6'
+echo 'Invalid input. The input should be in the range of 1 to 5.'
+echo '===================================================='
+./a.out <<-EndOfInput
+1 0
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please select from the following menu: 1.Sofa 2. Loveseat, 3. 4 Post Bed, 4. Dresser, 5. Kitchen Table'
+echo 'Enter furniture selection: 1'
+echo 'Enter months rented: 0'
+echo 'Invalid input. Enter a positive number for months rented.'
+echo '===================================================='
+./a.out <<-EndOfInput
+5 1
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please select from the following menu: 1.Sofa 2. Loveseat, 3. 4 Post Bed, 4. Dresser, 5. Kitchen Table'
+echo 'Enter furniture selection: 5'
+echo 'Enter months rented: 1'
+echo 'Amount due ($): 25'
+echo '===================================================='
+./a.out <<-EndOfInput
+1 2
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please select from the following menu: 1.Sofa 2. Loveseat, 3. 4 Post Bed, 4. Dresser, 5. Kitchen Table'
+echo 'Enter furniture selection: 1'
+echo 'Enter months rented: 2'
+echo 'Amount due ($): 32'
+echo '===================================================='
+./a.out <<-EndOfInput
+4 10
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please select from the following menu: 1.Sofa 2. Loveseat, 3. 4 Post Bed, 4. Dresser, 5. Kitchen Table'
+echo 'Enter furniture selection: 4'
+echo 'Enter months rented: 10'
+echo 'Amount due ($): 50'
+echo '===================================================='
+./a.out <<-EndOfInput
+3 15
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please select from the following menu: 1.Sofa 2. Loveseat, 3. 4 Post Bed, 4. Dresser, 5. Kitchen Table'
+echo 'Enter furniture selection: 3'
+echo 'Enter months rented: 15'
+echo 'Amount due ($): 129'
+echo '===================================================='
+./a.out <<-EndOfInput
+2 27
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please select from the following menu: 1.Sofa 2. Loveseat, 3. 4 Post Bed, 4. Dresser, 5. Kitchen Table'
+echo 'Enter furniture selection: 2'
+echo 'Enter months rented: 27'
+echo 'Amount due ($): 190'
+echo '===================================================='
+./a.out <<-EndOfInput
+4 53
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please select from the following menu: 1.Sofa 2. Loveseat, 3. 4 Post Bed, 4. Dresser, 5. Kitchen Table'
+echo 'Enter furniture selection: 4'
+echo 'Enter months rented: 53'
+echo 'Amount due ($): 225'
+echo '===================================================='

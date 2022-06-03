@@ -1,0 +1,52 @@
+# Written by Jing Wang for Program Design
+# try_arrays2 is a Unix shell script that will be used to test project 4, problem 2.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_arrays2
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_arrays2
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+./a.out <<-EndOfInput
+4
+-6 0 17 3
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the length of the array: 4'
+echo 'Enter the elements of the array: -6 0 17 3'
+echo 'Output: There are no three identical consecutive elements in the array.'
+echo '===================================================='
+./a.out <<-EndOfInput
+5
+3 7 7 7 0
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the length of the array: 5'
+echo 'Enter the elements of the array: 3 7 7 7 0'
+echo 'Output: There are 1 of three identical consecutive elements in the array: 7'
+echo '===================================================='
+./a.out <<-EndOfInput
+12
+0 3 3 3 -4 10 10 10 8 23 23 23
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the length of the array: 12'
+echo 'Enter the elements of the array: 0 3 3 3 -4 10 10 10 8 23 23 23'
+echo 'Output: There are 3 of three identical consecutive elements in the array: 3 10 23 '
+echo '===================================================='
+./a.out <<-EndOfInput
+12
+0 3 3 2 -4 10 10 10 8 23 23 23
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the length of the array: 12'
+echo 'Enter the elements of the array: 0 3 3 2 -4 10 10 10 8 23 23 23'
+echo 'Output: There are 2 of three identical consecutive elements in the array: 10 23 '
+echo '===================================================='
+

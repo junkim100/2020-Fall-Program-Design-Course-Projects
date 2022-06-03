@@ -1,0 +1,52 @@
+#test script for project 7
+#Author: Jing Wang, for Program Design
+#To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_animals
+# Compile your program, producing a.out as the executable
+# To run the script, type
+# ./try_animals
+# The user input will not be shown on the screen
+./a.out  <<-EndOfInput
+animals.txt
+EndOfInput
+#
+cat sorted_dogs.txt
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Ada                 female         2     32.00'
+echo 'Nori                female         3     35.30'
+echo 'Maple               female         3     51.60'
+echo 'Max                   male         3     52.80'
+echo 'Lucky                 male         3     45.40'
+echo 'Toggle              female         3     48.00'
+echo 'Fritz                 male         4     92.00'
+echo 'Rex                   male         4     28.90'
+echo 'Bear                  male         4      7.00'
+echo 'Midnight            female         5    112.00'
+echo 'Kujo                  male         8    172.00'
+echo 'Bo                    male         8     76.10'
+echo 'Rocky                 male         8     56.00'
+echo 'Gir                   male         8     88.00'
+echo 'Boo-boo               male        11    123.00'
+echo 'Yoyo                  male        13     10.50'
+echo '========================================================='
+cat sorted_cats.txt
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Heathcliff            male         1      2.10'
+echo 'Wade                  male         1      3.20'
+echo 'Sasha               female         1      6.50'
+echo 'Daisy               female         2      8.10'
+echo 'Snowcone            female         2      6.50'
+echo 'Mittens             female         2      7.40'
+echo 'Hercules              male         3     13.40'
+echo 'Lucy                female         5     12.00'
+echo 'Sunflower           female         5      8.10'
+echo 'Tigger              female         6     13.00'
+echo 'Miaulis               male         7      8.80'
+echo 'Sheba               female         7      8.40'
+echo 'Oliver                male         9     15.00'
+echo 'Tinkles             female        11      1.70'
+echo 'Felix                 male        16      9.20'
+echo '========================================================='
